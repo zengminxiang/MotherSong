@@ -39,7 +39,7 @@ import java.util.Map;
 /**
  *作者：胖胖祥
  *时间：2016/6/27 0027 下午 12:05
- *功能模块：收藏视频
+ *功能模块：收藏视频发
  */
 public class CollectionActivity extends BaseActivity {
 
