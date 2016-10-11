@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:padding="5dp"
+        android:background="@drawable/layout_background_a"
+
+        >
+
+        <ImageView
+            android:id="@+id/topic_head"
+            android:layout_width="@dimen/umeng_comm_dimen_100px"
+            android:layout_height="@dimen/umeng_comm_dimen_100px" />
+
+        <TextView
+            android:id="@+id/topic_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="#FF2B78FD"
+            android:layout_marginLeft="@dimen/umeng_comm_dimen_60px"
+            android:layout_toRightOf="@+id/topic_head"
+
+            android:text="大码"
+            />
+
+        <Button
+            android:id="@+id/topic_button"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/buttonstyle_a"
+            android:text="关注"
+            />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

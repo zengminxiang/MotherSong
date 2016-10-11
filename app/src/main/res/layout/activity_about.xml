@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bages"
+    tools:context="com.fanstech.mothersong.ui.AboutActivity">
+
+    <LinearLayout
+        android:id="@+id/about_layout"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:gravity="center"
+        >
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:background="@mipmap/logo" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/about_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/about_layout"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:text="广州番薯科技——妈妈颂APP是以广场舞为主题的综合生活服务平台，致力于为大妈们打造适应大妈需求的移动互联网空间，让大妈们不再是互联网+时代的旁观者...."
+        />
+
+    <TextView
+        android:layout_below="@+id/about_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_centerInParent="true"
+        android:textSize="20sp"
+        android:textColor="@color/bg_white"
+        android:text="赶快来加入我们吧！"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+
+        <com.fanstech.mothersong.custom_view.ImageViewUtil
+            android:id="@+id/to_item_head"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:src="@mipmap/logo"
+            />
+        <TextView
+            android:id="@+id/to_item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/to_item_head"
+            android:layout_marginTop="15dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:text="曾志伟"
+            />
+
+        <TextView
+            android:id="@+id/to_item_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/to_item_head"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="5dp"
+            android:textSize="14sp"
+            android:layout_marginBottom="15dp"
+            android:text="2016-02-19 06:12:30"
+            />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginRight="4dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        >
+
+        <Button
+            android:id="@+id/toexamine_agree"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/buttonstyle_a"
+            android:layout_weight="1"
+            android:text="同意"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/buttonstyle_a"
+            android:text="拒绝"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

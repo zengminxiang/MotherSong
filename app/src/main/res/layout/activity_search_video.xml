@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.fanstech.mothersong.video.SearchVideoActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:clipToPadding="true"
+        android:fitsSystemWindows="true"
+        android:background="@mipmap/backgroundmap"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/main_title_rl"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <Button
+                android:id="@+id/back_button"
+                android:layout_width="50dp"
+                android:layout_height="25dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/buttonstyle_a"
+                android:text="返回"
+                android:textColor="#ffffff"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="妈妈颂"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/function_button"
+                android:layout_width="50dp"
+                android:layout_height="25dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/buttonstyle_a"
+                android:text="发送"
+                android:textColor="#ffffff"
+                android:textSize="12sp"
+                android:visibility="gone" />
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <ListView
+        android:layout_below="@+id/main_title_rl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/jievideolistfile"
+        />
+</LinearLayout>

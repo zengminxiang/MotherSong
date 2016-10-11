@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="true"
+    android:background="@color/bages"
+    android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:background="@mipmap/backgroundmap"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="我的"
+                        android:textColor="#ffffff"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/my_message"
+                        android:layout_width="25dp"
+                        android:layout_height="18dp"
+                        android:background="@mipmap/mail"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/my_noLogin"
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:visibility="gone"
+                    android:layout_height="100dp">
+
+                    <com.fanstech.mothersong.custom_view.ImageViewUtil
+                        android:id="@+id/my_ishead"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@mipmap/logo" />
+
+                    <Button
+                        android:id="@+id/my_login"
+                        android:layout_width="70dp"
+                        android:layout_height="30dp"
+                        android:layout_toRightOf="@+id/my_ishead"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/buttonstyle_a"
+                        android:layout_centerVertical="true"
+                        android:text="登录" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/my_yesLogin"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp">
+
+                    <com.fanstech.mothersong.custom_view.ImageViewUtil
+                        android:id="@+id/my_head"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:src="@mipmap/logo" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:layout_toRightOf="@+id/my_head">
+
+                        <TextView
+                            android:id="@+id/my_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#ffffff"
+                            android:drawablePadding="10dp"
+                            android:drawableLeft="@mipmap/username"
+                            android:text="胖胖祥" />
+
+                        <TextView
+                            android:id="@+id/my_Grade"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/my_name"
+                            android:drawablePadding="10dp"
+                            android:drawableLeft="@mipmap/user"
+                            android:textColor="#ffffff"
+                            android:layout_marginTop="10dp"
+                            android:text="lv1" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/my_modify"
+                        android:layout_width="50dp"
+                        android:layout_height="30dp"
+                        android:text="编辑"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:textSize="16sp"
+                        android:textColor="@color/bg_topbar"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="11dp"
+                        android:background="@drawable/buttonstyle_a"
+                        />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="5.0dip"
+                android:background="@color/black2" />
+            <TextView
+                android:id="@+id/my_dance"
+                style="@style/TxtTitle"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/setting_item_selector"
+                android:drawableLeft="@mipmap/me_wudui"
+                android:drawablePadding="10dp"
+                android:drawableRight="@mipmap/right"
+                android:gravity="center_vertical"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:text="舞队"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="5.0dip"
+                android:background="@color/bages" />
+
+            <TextView
+                android:id="@+id/my_follow"
+                style="@style/TxtTitle"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/setting_item_selector"
+                android:drawableLeft="@mipmap/me_follow"
+                android:drawablePadding="10dp"
+                android:drawableRight="@mipmap/right"
+                android:gravity="center_vertical"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:text="关注的舞队"
+                android:textSize="16sp" />
+
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="5.0dip"
+                android:background="@color/bages" />
+
+            <TextView
+                android:id="@+id/my_record"
+                style="@style/TxtTitle"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/setting_item_selector"
+                android:drawableLeft="@mipmap/me_gkls"
+                android:drawablePadding="10dp"
+                android:drawableRight="@mipmap/right"
+                android:gravity="center_vertical"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:text="我的说说"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="5.0dip"
+                android:background="@color/bages" />
+
+            <TextView
+                android:id="@+id/my_video"
+                style="@style/TxtTitle"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/setting_item_selector"
+                android:drawableLeft="@mipmap/me_video"
+                android:drawablePadding="10dp"
+                android:drawableRight="@mipmap/right"
+                android:gravity="center_vertical"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:text="我的视频"
+                android:textSize="16sp" />
+
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="5.0dip"
+                android:background="@color/bages" />
+
+            <TextView
+                android:id="@+id/my_community"
+                style="@style/TxtTitle"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/setting_item_selector"
+                android:drawableLeft="@mipmap/me_collection"
+                android:drawablePadding="10dp"
+                android:drawableRight="@mipmap/right"
+                android:gravity="center_vertical"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:text="我的收藏"
+                android:textSize="16sp" />
+
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="5.0dip"
+                android:background="@color/bages" />
+
+            <TextView
+                style="@style/TxtTitle"
+                android:id="@+id/my_setup"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/setting_item_selector"
+                android:drawableLeft="@mipmap/me_set"
+                android:drawablePadding="10dp"
+                android:drawableRight="@mipmap/right"
+                android:gravity="center_vertical"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:text="设置"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="5.0dip"
+                android:background="@color/bages" />
+
+            <TextView
+                android:id="@+id/my_feedback"
+                style="@style/TxtTitle"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/setting_item_selector"
+                android:drawableLeft="@mipmap/me_feedback"
+                android:drawablePadding="10dp"
+                android:drawableRight="@mipmap/right"
+                android:gravity="center_vertical"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:text="意见反馈"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="5.0dip"
+                android:background="@color/bages" />
+
+        </LinearLayout>
+
+
+</LinearLayout>

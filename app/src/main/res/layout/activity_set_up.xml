@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bages"
+    tools:context="com.fanstech.mothersong.ui.SetUpActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:background="@color/bage" />
+
+        <TextView
+            android:id="@+id/set_common"
+            style="@style/TxtTitle"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/setting_item_selector"
+            android:drawablePadding="10dp"
+            android:drawableRight="@mipmap/right"
+            android:gravity="center_vertical"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:text="常见问题"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:background="@color/bage" />
+
+
+        <TextView
+            android:id="@+id/set_about"
+            style="@style/TxtTitle"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/setting_item_selector"
+            android:drawablePadding="10dp"
+            android:drawableRight="@mipmap/right"
+            android:gravity="center_vertical"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:text="关于我们"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:background="@color/bage" />
+
+        <TextView
+            android:id="@+id/set_ToUpdate"
+            style="@style/TxtTitle"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/setting_item_selector"
+            android:drawablePadding="10dp"
+            android:drawableRight="@mipmap/right"
+            android:gravity="center_vertical"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:text="版本更新"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:background="@color/bage" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/out_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/buttonstyle_a"
+        android:text="退出登录" />
+
+</RelativeLayout>

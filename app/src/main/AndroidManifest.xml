@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.fanstech.mothersong">
+
+    <!-- 检测网络状态 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+
+    <!-- mob配置 -->
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+
+    <!-- 百度地图配置 -->
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+
+    <application
+        android:name=".public_class.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="dyZohLOsHVAyTpGfDGB9kyGmDEeXP58U" />
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="575d0cd7e0f55a8645002915" />
+        <!-- 友盟的App secret -->
+        <meta-data
+            android:name="UMENG_MESSAGE_SECRET"
+            android:value="9ff17cf3f6d01d268af5b30169595e84" />
+
+        <activity android:name=".ui.WelcomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- mob配置 -->
+        <activity
+            android:name="com.mob.tools.MobUIShell"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+            <intent-filter>
+                <data android:scheme="tencent100371282" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <!-- 调用新浪原生SDK，需要注册的回调activity -->
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- 百度地图 -->
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" />
+
+        <!-- 微信分享回调 -->
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity android:name=".ui.LoginActivity" />
+        <activity android:name=".ui.RegisterActivity" />
+        <activity android:name=".ui.FrgetPassword" />
+        <activity android:name=".video.VideoListActivity" />
+        <activity android:name=".video.UploadVideoActivity" />
+        <activity android:name=".video.SearchVideoActivity" />
+
+        <activity android:name=".video.VideoDetailsActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="keyboardHidden|orientation|screenSize|layoutDirection"
+            />
+        <activity android:name=".DanceTeam.MyDanceTeamActivity" />
+        <activity android:name=".DanceTeam.EstablishDanceTeamActivity" />
+        <activity android:name=".DanceTeam.FollowDanceTeamActivity" />
+        <activity android:name=".ui.ViewingHistoryActivity" />
+        <activity android:name=".ui.CollectionActivity" />
+        <activity android:name=".DanceTeam.JoinDanceListActivity" />
+        <activity android:name=".video.MyVideoActivity" />
+        <activity android:name=".dekaron.DekaronAcrivity" />
+        <activity android:name=".DanceTeam.JoinAddreNameActivity" />
+        <activity android:name=".ui.SetUpActivity" />
+        <activity android:name=".ui.AboutActivity" />
+        <activity android:name=".ui.ModifyUserActivity" />
+        <activity android:name=".ui.FeedbackActivity" />
+        <activity android:name=".ui.MessageActivity" />
+        <activity android:name=".DanceTeam.DanceMessageActivity" />
+        <activity android:name=".DanceTeam.DancePkMessageActivity" />
+        <activity android:name=".DanceTeam.DanceSqMessageActivity" />
+        <activity android:name=".DanceTeam.MemberManagementActivity" />
+        <activity android:name=".RankingList.RankingListActivity" />
+        <activity
+            android:name=".dekaron.DancePKListActivity"
+            android:label="@string/title_activity_dance_pklist"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".dekaron.LaunchPKActivity" />
+        <activity android:name=".dekaron.VoteListActivity" />
+        <activity android:name=".dekaron.VoteDetailsActivity" />
+        <activity android:name=".ui.CommonProblemActivity" />
+        <activity android:name=".dekaron.YuezhanActivity" />
+        <activity android:name=".dekaron.LaunchPKOneActivity" />
+        <activity android:name=".dekaron.YueZhanMessageActivity" />
+        <activity android:name=".main_fragment.community_view.CommunityDetailsActivity" />
+        <activity android:name=".main_fragment.community_publish.ui.ChoicePhotoActivity" />
+        <activity android:name=".main_fragment.community_publish.ui.ImageZoomActivity" />
+        <activity android:name=".main_fragment.community_publish.ui.PublishActivity" />
+        <activity android:name=".main_fragment.community_view.TopicFeedsListActivity" />
+        <activity android:name=".ui.AlterUserActivity" />
+        <activity android:name=".main_fragment.community_view.ImagePagerActivity" />
+        <activity android:name=".ui.CommentListActivity" />
+        <activity android:name=".ui.ZanMessageActivity" />
+        <activity android:name=".ui.HuodongActivity" />
+        <activity android:name=".MainActivity"></activity>
+    </application>
+
+</manifest>

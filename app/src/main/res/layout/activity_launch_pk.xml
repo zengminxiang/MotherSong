@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.fanstech.mothersong.dekaron.LaunchPKActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@mipmap/backgroundmap">
+
+        <ImageView
+            android:id="@+id/launck_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@mipmap/pk_blue" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/launck_image"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/launck_text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="发起挑战"
+                android:textSize="18sp"
+
+                />
+
+            <TextView
+                android:id="@+id/launck_text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/launck_text1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:text="投票时长："
+                />
+
+            <Spinner
+                android:id="@+id/homeCourt"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/launck_text2"
+                android:layout_below="@+id/launck_text1" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="150dp"
+        android:layout_height="150dp"
+        android:background="@mipmap/pk_one"
+        />
+
+    <Button
+        android:id="@+id/launck_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/buttonstyle_a"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="下一步"
+        />
+
+</RelativeLayout>

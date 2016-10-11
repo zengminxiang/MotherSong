@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/publish_title"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="写个标题吧，限30字"
+            android:layout_marginLeft="10dp"
+            android:textColorHint="@color/no5_gray_silver"
+            android:textSize="12sp"
+            android:background="@null" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/bg_white"
+            android:layout_marginLeft="10dp"
+            />
+
+        <EditText
+            android:id="@+id/publish_context"
+            android:layout_width="fill_parent"
+            android:layout_height="100dp"
+            android:layout_margin="8dp"
+            android:background="@null"
+            android:gravity="left|top"
+            android:textColorHint="@color/no5_gray_silver"
+            android:textSize="16sp"
+            android:hint="想说点什么？？" >
+        </EditText>
+
+        <GridView
+            android:id="@+id/gridview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:horizontalSpacing="3dp"
+            android:numColumns="4"
+            android:scrollbars="none"
+            android:verticalSpacing="5dp" >
+        </GridView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:background="@color/bg_topbar"
+            >
+
+            <TextView
+                android:id="@+id/my_dance_text2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textColor="@color/no5_gray_silver"
+                android:layout_marginLeft="20dp"
+                android:text="#所属话题："
+                />
+
+            <Spinner
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:id="@+id/Topic"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@+id/my_dance_text2"
+                />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/load"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dip"
+        android:visibility="gone"
+        android:indeterminateDrawable="@drawable/animdraw2"
+        android:indeterminateDuration="1500"
+        />
+
+</RelativeLayout>

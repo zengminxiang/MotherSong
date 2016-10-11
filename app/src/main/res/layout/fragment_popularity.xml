@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bages"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/layout_background_a"
+        >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        >
+
+        <RelativeLayout
+            android:id="@+id/popularty_layout"
+            android:layout_width="70dp"
+            android:layout_height="70dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/rankingonea"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/rankingone"
+                />
+
+        </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_toRightOf="@+id/popularty_layout"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="2dp"
+        >
+
+        <ImageView
+            android:id="@+id/message_image4"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_centerVertical="true"
+            android:background="@mipmap/logo"
+            />
+
+        <TextView
+            android:id="@+id/text4_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/message_image4"
+            android:layout_marginLeft="20dp"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="30dp"
+            android:text="用户名：胖胖祥"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:text="5556"
+            />
+
+    </RelativeLayout>
+
+    </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:background="@color/bages"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            >
+
+            <RelativeLayout
+                android:id="@+id/popularty_layout1"
+                android:layout_width="70dp"
+                android:layout_height="70dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/rankingtwo"
+                    />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@mipmap/rankingtwoa"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_toRightOf="@+id/popularty_layout1"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="2dp"
+                >
+
+                <ImageView
+                    android:id="@+id/message_image3"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_centerVertical="true"
+                    android:background="@mipmap/logo"
+                    />
+
+                <TextView
+                    android:id="@+id/text3_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/message_image3"
+                    android:layout_marginLeft="20dp"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="30dp"
+                    android:text="用户名：曾敏祥"
+                    />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:text="5000"
+                    />
+
+            </RelativeLayout>
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:background="@color/bages"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            >
+
+            <RelativeLayout
+                android:id="@+id/popularty_layout2"
+                android:layout_width="70dp"
+                android:layout_height="70dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/rankingthreea"
+                    />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@mipmap/rankingthree"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_toRightOf="@+id/popularty_layout2"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="2dp"
+                >
+
+                <ImageView
+                    android:id="@+id/message_image2"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_centerVertical="true"
+                    android:background="@mipmap/logo"
+                    />
+
+                <TextView
+                    android:id="@+id/text2_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/message_image2"
+                    android:layout_marginLeft="20dp"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="30dp"
+                    android:text="用户名：盼盼祥"
+                    />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:text="4556"
+                    />
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.fanstech.mothersong.ui.CollectionActivity">
+
+    <RelativeLayout
+        android:id="@+id/pklist_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:padding="10dp"
+        android:background="@drawable/layout_background_b"
+        >
+
+        <TextView
+            android:id="@+id/gc_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:text="广州东站广场"
+            />
+
+    </RelativeLayout>
+
+
+    <com.cjj.MaterialRefreshLayout
+        android:id="@+id/refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/pklist_layout"
+        >
+        <ListView
+            android:id="@+id/pk_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="#00000000"
+            android:divider="#00000000"
+            android:listSelector="#00000000">
+        </ListView>
+
+</com.cjj.MaterialRefreshLayout>
+
+    <ProgressBar
+        android:id="@+id/load"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dip"
+        android:layout_centerInParent="true"
+        android:indeterminateDrawable="@drawable/animdraw2"
+        android:indeterminateDuration="1500" />
+
+
+    <TextView
+        android:id="@+id/no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="没有舞队"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        />
+
+</RelativeLayout>

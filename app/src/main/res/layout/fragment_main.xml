@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.fanstech.mothersong.custom_view.MyScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:background="@mipmap/main_bage"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:text="广州市"
+                    android:padding="5dp"
+                    android:background="@drawable/textview_background"
+                    android:textColor="@color/bg_white"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:id="@+id/map"
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:layout_alignParentBottom="true"
+                    android:src="@mipmap/main_bagea"
+                    android:layout_centerHorizontal="true"
+                    />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/layout_background">
+
+                <TextView
+                    android:id="@+id/week"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:text="星期一" />
+
+                <ImageView
+                    android:id="@+id/weathers_image"
+                    android:layout_width="38dp"
+                    android:layout_height="25dp"
+                    android:layout_centerInParent="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="50dp"
+                    android:src="@mipmap/qing" />
+
+                <TextView
+                    android:id="@+id/temperature"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:text="31～24℃" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    >
+
+                <TextView
+                    android:id="@+id/main_activity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:background="@mipmap/toupiao"
+                    />
+
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    >
+
+                    <TextView
+                        android:id="@+id/main_vote"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:background="@mipmap/huodong"
+                        />
+
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    >
+
+                    <TextView
+                        android:id="@+id/main_ranking"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:background="@mipmap/paihangbang"
+                        />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    >
+
+                    <TextView
+                        android:id="@+id/main_video"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:background="@mipmap/video"
+                        />
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/div_tab_bar"
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:background="@color/div_white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:text="@string/hot_video"
+                android:textColor="#000000" />
+
+            <GridView
+                android:id="@+id/hot_gview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnWidth="20dp"
+                android:numColumns="2"
+                android:stretchMode="columnWidth"></GridView>
+        </LinearLayout>
+
+    </com.fanstech.mothersong.custom_view.MyScrollView>
+</LinearLayout>

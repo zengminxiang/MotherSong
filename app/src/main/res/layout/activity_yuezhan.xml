@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.fanstech.mothersong.dekaron.YuezhanActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:onClick="onClickYuezhan"
+            android:background="@mipmap/yuezhan_y"
+            />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:onClick="onClickWuDui"
+            android:background="@mipmap/yue_wudui"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            >
+
+            <ImageView
+                android:id="@+id/yuezhan_zhousai"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onClickZhouSai"
+                android:background="@mipmap/yeuzhou_shan"
+                />
+
+            <ImageView
+                android:layout_below="@+id/yuezhan_zhousai"
+                android:layout_width="match_parent"
+                android:layout_marginTop="8dp"
+                android:layout_height="wrap_content"
+                android:onClick="onClickYouYiSai"
+                android:background="@mipmap/yue_youyisai"
+                />
+        </RelativeLayout>
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:onClick="onClickYuezhanMessage"
+            android:layout_weight="1"
+            android:background="@mipmap/yuezhan_message"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>

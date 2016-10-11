@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="com.fanstech.mothersong.dekaron.VoteDetailsActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="发起方："
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/layout_background_a"
+        android:padding="5dp"
+        android:layout_height="150dp">
+
+        <ImageView
+            android:id="@+id/vote_dance_head_a"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:background="@mipmap/logo"
+            />
+
+        <TextView
+            android:id="@+id/vote_dance_name_a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/vote_dance_head_a"
+            android:text="番薯科技"
+            />
+
+        <ImageView
+            android:id="@+id/vote_dance_video_image_a"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_alignParentRight="true"
+            android:background="@mipmap/logo"
+            android:scaleType="fitXY"
+            />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/pk_dance_image"
+        >
+
+        <Button
+            android:id="@+id/vote_button1_a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="10dp"
+            android:text="投票"
+            android:background="@drawable/buttonstyle_a"
+            />
+
+        <Button
+            android:id="@+id/vote_button2_a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="分享"
+            android:background="@drawable/buttonstyle_a"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="接受方："
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/layout_background_a"
+        android:padding="5dp"
+        android:layout_height="150dp">
+
+        <ImageView
+            android:id="@+id/vote_dance_head_b"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:background="@mipmap/logo"
+            />
+
+        <TextView
+            android:id="@+id/vote_dance_name_b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/vote_dance_head_b"
+            android:text="番薯科技"
+            />
+
+        <ImageView
+            android:id="@+id/vote_dance_video_image_b"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_alignParentRight="true"
+            android:background="@mipmap/logo"
+            android:scaleType="fitXY"
+            />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/pk_dance_image"
+        >
+
+        <Button
+            android:id="@+id/vote_button1_b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="10dp"
+            android:text="投票"
+            android:background="@drawable/buttonstyle_a"
+            />
+
+        <Button
+            android:id="@+id/vote_button2_b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="分享"
+            android:background="@drawable/buttonstyle_a"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>

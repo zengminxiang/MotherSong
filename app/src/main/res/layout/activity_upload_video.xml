@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.fanstech.mothersong.video.UploadVideoActivity">
+
+
+    <LinearLayout
+        android:id="@+id/base_layout"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:clipToPadding="true"
+        android:fitsSystemWindows="true"
+        android:background="@mipmap/backgroundmap"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/main_title_rl"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <Button
+                android:id="@+id/back_button"
+                android:layout_width="50dp"
+                android:layout_height="25dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/buttonstyle_a"
+                android:text="返回"
+                android:textColor="#ffffff"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="妈妈颂"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/function_button"
+                android:layout_width="50dp"
+                android:layout_height="25dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/buttonstyle_a"
+                android:text="发送"
+                android:textColor="#ffffff"
+                android:visibility="gone"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/function_text"
+                android:layout_width="25dp"
+                android:layout_height="18dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:background="@mipmap/mail"
+                android:textColor="#ffffff"
+                android:visibility="gone"
+                android:textSize="12sp"/>
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <com.fanstech.mothersong.custom_view.MyScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/base_layout"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rl_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:focusable="true"
+                android:focusableInTouchMode="true">
+
+                <ImageView
+                    android:id="@+id/video_background"
+                    android:layout_width="wrap_content"
+                    android:layout_height="150dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:background="@mipmap/upvideo" />
+
+                <EditText
+                    android:id="@+id/edit_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/video_background"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/layout_background_d"
+                    android:gravity="center"
+                    android:hint="视频标题" />
+
+                <EditText
+                    android:id="@+id/video_desc"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@android:drawable/edit_text"
+                    android:enabled="true"
+                    android:gravity="top"
+                    android:inputType="textMultiLine"
+                    android:maxLines="10"
+                    android:minLines="8"
+                    android:layout_below="@+id/edit_title"
+                    android:hint="请输入视频简介"
+                    android:scrollbars="vertical"></EditText>
+
+
+                <Button
+                    android:id="@+id/submitvideo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/video_desc"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/buttonstyle"
+                    android:gravity="center"
+                    android:text="发布" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_progress"
+                android:layout_width="match_parent"
+                android:layout_height="50dip"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="20dip"
+                android:layout_marginRight="20dip"
+                android:layout_marginTop="30dip"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/video_size"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dip"
+                    android:textColor="@color/no5_gray_silver"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/video_speed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="6dip"
+                    android:textColor="@color/no5_gray_silver"
+                    android:textSize="12sp" />
+
+                <com.fanstech.mothersong.custom_view.DownLoadProgressbar
+                    android:id="@+id/dp_game_progress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/video_size"></com.fanstech.mothersong.custom_view.DownLoadProgressbar>
+
+
+            </RelativeLayout>
+        </LinearLayout>
+    </com.fanstech.mothersong.custom_view.MyScrollView>
+
+</RelativeLayout>

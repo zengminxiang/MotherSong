@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/video_layout_details"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.fanstech.mothersong.video.VideoDetailsActivity">
+
+    <LinearLayout
+        android:id="@+id/layout_zong"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/layout"
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+
+            <FrameLayout
+                android:id="@+id/layout_video"
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
+
+            </FrameLayout>
+
+            <RelativeLayout
+                android:id="@+id/showview"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/image_bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#FF4081" />
+
+                <ImageView
+                    android:id="@+id/image_play"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@android:drawable/ic_media_play" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+        <com.fanstech.mothersong.custom_view.MyScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/video_details_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/bg_white"></View>
+
+                <Button
+                    android:id="@+id/button1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/bages"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:onClick="onClickShare">
+
+
+                        <ImageView
+                            android:id="@+id/video_shar"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginBottom="2dp"
+                            android:layout_marginTop="2dp"
+                            android:background="@mipmap/video_shar" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:onClick="onClickZambia">
+
+
+                        <ImageView
+                            android:id="@+id/dianzan"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginBottom="2dp"
+                            android:layout_marginTop="2dp"
+                            android:background="@mipmap/znab" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:onClick="onClickCollection">
+
+
+                        <ImageView
+                            android:id="@+id/collection_image"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginBottom="2dp"
+                            android:layout_marginTop="2dp"
+                            android:background="@mipmap/conns" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:onClick="onClickEdit">
+
+
+                        <ImageView
+                            android:id="@+id/bianji_image"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginBottom="2dp"
+                            android:layout_marginTop="2dp"
+                            android:background="@mipmap/up" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/video_no_desc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:text="视频简介:"
+                        android:textColor="#000000"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:id="@+id/video_details_desc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/video_no_desc"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="5dp"
+                        android:text="     《小苹果》由筷子兄弟创作，音乐风格以全新的复古电音节奏与朗朗上口的歌词为主。词曲作者王太利表示，“筷子兄弟”一直想在音乐中加入多样化的元素，小时候常听“荷东”“猛士”等迪斯科舞曲，此次用复古节奏搭配神曲元素，是对流行的一种致敬，也是“老男孩”对青春的一种怀念。，因多在广场聚集而得名，融自娱性与表演性为一体，以集体舞为主要表演形式，以娱乐身心为主要目的...." />
+
+                    <View
+                        android:id="@+id/video_no_one"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@+id/video_details_desc"
+                        android:layout_marginTop="15dp"
+                        android:background="@color/bg_white"></View>
+
+
+                    <TextView
+                        android:id="@+id/common_number"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_below="@+id/video_no_one"
+                        android:gravity="center"
+                        android:text="评论XXX条" />
+
+                    <View
+                        android:id="@+id/video_no_two"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@+id/common_number"
+                        android:background="@color/bg_white"></View>
+
+                    <ListView
+                        android:id="@+id/video_details_lists"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/video_no_two"
+                        android:cacheColorHint="#00000000"
+                        android:divider="#00000000"
+                        android:listSelector="#00000000">
+
+                    </ListView>
+
+                    <ProgressBar
+                        android:id="@+id/load"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dip"
+                        android:indeterminateDrawable="@drawable/animdraw2"
+                        android:indeterminateDuration="1500" />
+
+
+                </RelativeLayout>
+            </LinearLayout>
+        </com.fanstech.mothersong.custom_view.MyScrollView>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/full_screen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+
+</RelativeLayout>

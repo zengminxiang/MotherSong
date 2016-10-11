@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:duplicateParentState="true"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:padding="5dp"
+        >
+
+        <com.fanstech.mothersong.custom_view.ImageViewUtil
+            android:id="@+id/member_item_avatar"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            />
+
+        <TextView
+            android:id="@+id/member_item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="18dp"
+            android:layout_toRightOf="@+id/member_item_avatar"
+            android:textColor="#0F0F0F"
+            android:text="胖胖祥申请加入舞队"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/member_item_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/pk_dance_image"
+        >
+
+        <Button
+            android:id="@+id/member_item_yes"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:text="同意"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/buttonstyle_a"
+            />
+        <Button
+            android:id="@+id/member_item_no"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:layout_marginRight="5dp"
+            android:text="拒绝"
+            android:background="@drawable/buttonstyle_a"
+            />
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/bg_white"
+        />
+
+
+</LinearLayout>

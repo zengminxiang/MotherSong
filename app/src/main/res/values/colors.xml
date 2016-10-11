@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="bages">#fff2ee</color>
+    <color name="bg_black">#000000</color>
+    <color name="bg_white">#f97d59</color>
+    <color name="bg_topbar">#FCFCFC</color>
+    <color name="bg_gray">#00F1F1F1</color>
+    <color name="transparent">#00FFFFFF</color>
+    <color name="black2">#ffeeeeee</color>
+
+    <color name="text_gray">#8D7A71</color>
+    <color name="text_white">#FFFFFF</color>
+    <color name="text_yellow">#FFC800</color>
+    <color name="text_topbar">#694E42</color>
+    <color name="div_white">#E5E5E5</color>
+    <color name="bage">#dfdfdf</color>
+
+    <color name="white">#ffffff</color>
+    <color name="base_color_text_white">#ffffff</color>
+    <color name="button_ow">#FF111425</color>
+
+    <!--下拉-->
+    <color name="swipe_color_1">#B6DB49</color>
+    <color name="swipe_color_2">#99CC00</color>
+    <color name="swipe_color_3">#8ABD00</color>
+    <color name="swipe_color_4">#7CAF00</color>
+
+
+    <color name="no1_gray_light">#e2e2e2</color>
+    <color name="no2_orange">#fe7d44</color>
+    <color name="no3_white">#ffffff</color>
+    <color name="no4_black">#000000</color>
+    <color name="no5_gray_silver">#b4b4b4</color>
+
+    <color name="umeng_text_common_default">#a5a5a5</color>
+    <color name="umeng_text_common_selected">#008bea</color>
+    <color name="umeng_text_common_selected_light">#81b0f0</color>
+    <color name="umeng_hot_button_normal">#8f8f8f</color>
+    <color name="umeng_cancel_button_grey">#c0c0c0</color>
+    <color name="umeng_comm_color_a5">#a5a5a5</color>
+
+    <color name="light_gray">#99a4b7</color>
+
+    <color name="black1">#7A7E83</color>
+
+    <color name="deep_gray">#394257</color>
+    <color name="border_gray">#d9dfe5</color>
+    <color name="btn_gray">#d1d1d1</color>
+    <color name="glass_gall">#c2ebef</color>
+    <color name="light_blue">#87d0f2</color>
+    <color name="bei">#F0EFF4</color>
+
+</resources>

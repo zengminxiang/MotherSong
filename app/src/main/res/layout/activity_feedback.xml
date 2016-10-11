@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bages"
+    tools:context="com.fanstech.mothersong.ui.FeedbackActivity">
+
+    <TextView
+        android:id="@+id/feedback_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="15dp"
+        android:text="亲爱的用户，你好。欢迎来到意见反馈中心，你对我们的妈妈颂有任何优化建议，请你在下方留言，我们会及时给你回复。"
+        />
+
+    <EditText
+        android:id="@+id/feedback_context"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/feedback_title"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/layout_background_a"
+        />
+
+    <Button
+        android:id="@+id/submit_feedback"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/feedback_context"
+        android:background="@drawable/buttonstyle_a"
+        android:text="提交"
+        />
+
+</RelativeLayout>

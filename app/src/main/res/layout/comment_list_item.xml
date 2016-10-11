@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/layout_background_a"
+        android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        >
+
+        <com.fanstech.mothersong.custom_view.ImageViewUtil
+            android:id="@+id/user_head"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:src="@mipmap/logo" />
+
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="2dp"
+            android:layout_toRightOf="@+id/user_head"
+            android:text="刘大妈"
+            android:textColor="@color/bg_black"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/context"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/user_name"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@+id/user_head"
+            android:text="一般般而已。。。。。。"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/createTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:text="2016-02-27 12:30:06"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_below="@+id/context"
+            android:layout_alignParentRight="true"
+            />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:background="@color/div_white"
+        android:layout_marginRight="@dimen/umeng_comm_dimen_10px"
+        android:layout_marginBottom="@dimen/umeng_comm_dimen_10px"
+        android:padding="10dp"
+        >
+
+        <ImageView
+            android:id="@+id/feeds_id"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:scaleType="fitXY"
+            />
+
+        <TextView
+            android:id="@+id/feeds_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/feeds_id"
+            android:layout_marginTop="@dimen/umeng_comm_dimen_10px"
+            android:layout_marginLeft="@dimen/umeng_comm_dimen_30px"
+            android:text="曾敏祥"
+            android:textColor="@color/swipe_color_4"
+            />
+
+        <TextView
+            android:id="@+id/feeds_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/feeds_id"
+            android:layout_below="@+id/feeds_name"
+            android:layout_marginLeft="@dimen/umeng_comm_dimen_30px"
+            android:layout_marginTop="5dp"
+            android:text="想说点什么呢"
+            />
+    </RelativeLayout>
+
+</LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.fanstech.mothersong.dekaron.LaunchPKActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@mipmap/backgroundmap">
+
+        <ImageView
+            android:id="@+id/launck_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@mipmap/pk_blue" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/launck_image"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/launck_text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="选择视频"
+                android:textSize="18sp"
+
+                />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <ImageView
+
+        android:id="@+id/pk_one_image"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="150dp"
+        android:layout_height="150dp"
+        android:background="@mipmap/pk_two"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/no"
+        android:visibility="gone"
+        android:layout_below="@+id/pk_one_image"
+        android:layout_marginTop="20dp"
+        android:layout_centerInParent="true"
+        android:text="你舞队没有视频，请上传"
+        />
+
+
+    <com.fanstech.mothersong.custom_view.RefreshLayout
+        android:id="@+id/video_list_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/pk_one_image">
+
+        <ListView
+            android:id="@+id/pk_my_video_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="#00000000"
+            android:divider="#00000000"
+            android:listSelector="#00000000">
+        </ListView>
+
+    </com.fanstech.mothersong.custom_view.RefreshLayout>
+
+
+</RelativeLayout>

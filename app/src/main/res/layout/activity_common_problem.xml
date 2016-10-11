@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bages"
+    android:orientation="vertical"
+    tools:context="com.fanstech.mothersong.ui.CommonProblemActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="问题1：忘记密码怎么办？"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="在妈妈颂登录页面点击【忘记密码】，通过你的手机号码+验证码重新设置新的密码"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="60dp"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:background="@color/bg_white"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="问题2：上传视频所用的流量"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="在上传视频的时候最好就使用WiFi上传视频，这样既节省流量，上传速度又快"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="60dp"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:background="@color/bg_white"
+        />
+
+</LinearLayout>

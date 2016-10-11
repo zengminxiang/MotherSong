@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bages"
+    tools:context="com.fanstech.mothersong.ui.MessageActivity">
+
+
+    <TextView
+        android:id="@+id/message_zan"
+        style="@style/TxtTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/setting_item_selector"
+        android:drawableLeft="@mipmap/me_wudui"
+        android:drawablePadding="10dp"
+        android:drawableRight="@mipmap/right"
+        android:gravity="center_vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:text="赞"
+        android:textSize="16sp" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip"
+        android:background="@color/bages" />
+
+    <TextView
+        android:id="@+id/message_comment"
+        style="@style/TxtTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/setting_item_selector"
+        android:drawableLeft="@mipmap/me_wudui"
+        android:drawablePadding="10dp"
+        android:drawableRight="@mipmap/right"
+        android:gravity="center_vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:text="评论"
+        android:textSize="16sp" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip"
+        android:background="@color/bages" />
+
+
+</LinearLayout>

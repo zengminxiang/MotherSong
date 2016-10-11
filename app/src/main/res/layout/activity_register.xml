@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bages"
+    tools:context="com.fanstech.mothersong.ui.RegisterActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:gravity="center"
+            >
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:background="@mipmap/logo" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/layout_background">
+
+            <ImageView
+                android:id="@+id/register_phone_image"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:src="@mipmap/mobile" />
+
+            <TextView
+                android:id="@+id/phone_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/register_phone_image"
+                android:text="："
+                />
+
+            <EditText
+                android:id="@+id/register_phone"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_toRightOf="@+id/phone_text"
+                android:background="@null"
+                android:hint="请输入你的手机号"
+                android:imeActionId="@+id/login"
+                android:imeOptions="actionUnspecified"
+                android:inputType="number"
+                android:maxLines="1"
+                android:singleLine="true" />
+
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/layout_background">
+
+            <ImageView
+                android:id="@+id/register_pwd_image"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:src="@mipmap/paw" />
+
+            <TextView
+                android:id="@+id/pwd_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/register_pwd_image"
+                android:text="："
+                />
+
+            <EditText
+                android:id="@+id/register_pwd"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_toRightOf="@+id/pwd_text"
+                android:background="@null"
+                android:hint="请输入你的密码"
+                android:imeActionId="@+id/login"
+                android:imeOptions="actionUnspecified"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:singleLine="true" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="@drawable/layout_background">
+
+                <ImageView
+                    android:id="@+id/login_code_image"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:src="@mipmap/frgetpwd" />
+
+                <TextView
+                    android:id="@+id/code_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/login_code_image"
+                    android:text="："
+                    />
+
+                <EditText
+                    android:id="@+id/register_code"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/code_text"
+                    android:background="@null"
+                    android:inputType="number"
+                    android:hint="验证码" />
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/register_getcode"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:background="@color/bg_white"
+                android:text="获取验证码"
+                />
+        </LinearLayout>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="同意并阅读《注册协议》"
+            android:id="@+id/radioButton" />
+
+        <Button
+            android:id="@+id/reg_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/buttonstyle"
+            android:text="注册"
+            />
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/reg_load"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dip"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        android:indeterminateDrawable="@drawable/animdraw2"
+        android:indeterminateDuration="1500" />
+
+
+</RelativeLayout>
